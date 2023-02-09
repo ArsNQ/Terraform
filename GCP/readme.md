@@ -97,3 +97,38 @@
 |        | 3.1.0  |        |        |       |
 |        | 3.0.0  |        |        |       |
 ```
+# List of usefull vmInstance E2 on GCP with Terraform.
+### e2-micro
+0.25-2 vCPU (1 shared core), 1 GB memory
+### e2-small
+0.5-2 vCPU (1 shared core), 2 GB memory
+### e2-medium
+1-2 vCPU (1 shared core), 4 GB memory
+### e2-standard-2
+2 vCPU, 8 GB memory
+### e2-standard-4
+4 vCPU, 16 GB memory
+### e2-standard-8
+8 vCPU, 32 GB memory
+### e2-standard-16
+16 vCPU, 64 GB memory
+### e2-standard-32
+32 vCPU, 128 GB memory
+### e2-highmem-2
+2 vCPU, 16 GB memory
+### e2-highmem-4
+4 vCPU, 32 GB memory
+### e2-highmem-8
+8 vCPU, 64 GB memory
+### e2-highmem-16
+16 vCPU, 128 GB memory
+### e2-highcpu-2
+2 vCPU, 2 GB memory
+### e2-highcpu-4
+4 vCPU, 4 GB memory
+### e2-highcpu-8
+8 vCPU, 8 GB memory
+### e2-highcpu-16
+16 vCPU, 16 GB memory
+### e2-highcpu-32
+32 vCPU, 32 GB memory
