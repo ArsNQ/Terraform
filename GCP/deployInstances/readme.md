@@ -1,9 +1,6 @@
 ## AUTHENTICATION
 ```bash
 gcloud auth application-default login
-```
-
-```bash
 gcloud config set project <my-gcp-project>
 ```
 
