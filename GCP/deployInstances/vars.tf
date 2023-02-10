@@ -5,15 +5,30 @@ variable "region" {
 
 variable "zone" {
   type = string
-  default = "us-central1-c"
+  default = "us-central1-a"
 }
 
 variable "project-name" {
   type = string
-  default = "playground-s-11-39683ae8"
+  default = ""
 }
 
 variable "counts" {
   type = string
-  default = "4"
+  default = "3"
+}
+
+variable "machine-type" {
+  type = string
+  default = "e2-small"
+}
+
+variable "image" {
+  # debian-cloud/debian-9
+  # debian-cloud/debian-10
+  # debian-cloud/debian-11
+  # ubuntu-os-cloud/family/ubuntu-2204-lts
+  # windows-cloud/windows-server-2019
+  type = string
+  default = "debian-cloud/debian-10"
 }

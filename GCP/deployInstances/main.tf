@@ -12,11 +12,11 @@ resource "google_compute_network" "vpc_network" {
 resource "google_compute_instance" "vm_instance" {
   count        = var.counts
   name         = "terraform-instance-0${count.index}"
-  machine_type = "f1-micro"
+  machine_type = var.machine-type
   zone         = var.zone
   boot_disk {
     initialize_params {
-      image = "debian-cloud/debian-11"
+      image = var.image
     }
   }
 
