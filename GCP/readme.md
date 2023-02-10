@@ -121,58 +121,9 @@
 * **e2-highcpu-32 -** _(32 vCPU, 32 GB memory)_
 
 # Region List & Zones
-**northamerica-northeast1**
-* northamerica-northeast1-a
-* northamerica-northeast1-b
-* northamerica-northeast1-c
-
-**northamerica-northeast2**
-* northamerica-northeast2-a
-* northamerica-northeast2-b
-* northamerica-northeast2-c
-
-**us-central1**
-* us-central1-a
-* us-central1-b
-* us-central1-c
-* us-central1-f
-
-**us-east1**
-* us-east1-b
-* us-east1-c
-* us-east1-d
-
-**us-east4**
-* us-east4-a
-* us-east4-b
-* us-east4-c
-
-**us-east5**
-* us-east5-a
-* us-east5-b
-* us-east5-c
-
-**us-west1**
-* us-west1-a
-* us-west1-b
-* us-west1-c
-
-**us-west2**
-* us-west2-a
-* us-west2-b
-* us-west2-c
-
-**us-west3**
-* us-west3-a
-* us-west3-b
-* us-west3-c
-
-**us-west4**
-* us-west4-a
-* us-west4-b
-* us-west4-c
-
-**us-south1**
-* us-south1-a
-* us-south1-b
-* us-south1-c
+| **northamerica-northeast1** | **northamerica-northeast2** | **us-central1** | **us-east1** | **us-east4** | **us-east5** | **us-west1** | **us-west2** | **us-west3** | **us-west4** | **us-south1** |
+|-----------------------------|-----------------------------|-----------------|--------------|--------------|--------------|--------------|--------------|--------------|--------------|---------------|
+|  northamerica-northeast1-a  |  northamerica-northeast2-a  |  us-central1-a  |  us-east1-b  |  us-east4-a  |  us-east5-a  |  us-west1-a  |  us-west2-a  |  us-west3-a  |  us-west4-a  |  us-south1-a  |
+|  northamerica-northeast1-b  |  northamerica-northeast2-b  |  us-central1-b  |  us-east1-c  |  us-east4-b  |  us-east5-b  |  us-west1-b  |  us-west2-b  |  us-west3-b  |  us-west4-b  |  us-south1-b  |
+|  northamerica-northeast1-c  |  northamerica-northeast2-c  |  us-central1-c  |  us-east1-d  |  us-east4-c  |  us-east5-c  |  us-west1-c  |  us-west2-c  |  us-west3-c  |  us-west4-c  |  us-south1-c  |
+|                             |                             |  us-central1-f  |              |              |              |              |              |              |              |               |
