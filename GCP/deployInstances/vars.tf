@@ -10,7 +10,7 @@ variable "zone" {
 
 variable "project-name" {
   type = string
-  default = ""
+  default = "playground-s-11-25ec1b80"
 }
 
 variable "counts" {
@@ -21,14 +21,4 @@ variable "counts" {
 variable "machine-type" {
   type = string
   default = "e2-small"
-}
-
-variable "image" {
-  # debian-cloud/debian-9
-  # debian-cloud/debian-10
-  # debian-cloud/debian-11
-  # ubuntu-os-cloud/family/ubuntu-2204-lts
-  # windows-cloud/windows-server-2019
-  type = string
-  default = "debian-cloud/debian-10"
 }

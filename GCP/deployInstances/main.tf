@@ -6,7 +6,7 @@ provider "google" {
 }
 
 resource "google_compute_network" "vpc_network" {
-  name = "terraform-network"
+  name = "terraform-network-001"
 }
 
 resource "google_compute_instance" "vm_instance" {
@@ -16,7 +16,7 @@ resource "google_compute_instance" "vm_instance" {
   zone         = var.zone
   boot_disk {
     initialize_params {
-      image = var.image
+      image = var.debian-10
     }
   }
 

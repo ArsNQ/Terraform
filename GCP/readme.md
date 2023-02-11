@@ -127,3 +127,12 @@
 |  northamerica-northeast1-b  |  northamerica-northeast2-b  |  us-central1-b  |  us-east1-c  |  us-east4-b  |  us-east5-b  |  us-west1-b  |  us-west2-b  |  us-west3-b  |  us-west4-b  |  us-south1-b  |
 |  northamerica-northeast1-c  |  northamerica-northeast2-c  |  us-central1-c  |  us-east1-d  |  us-east4-c  |  us-east5-c  |  us-west1-c  |  us-west2-c  |  us-west3-c  |  us-west4-c  |  us-south1-c  |
 |                             |                             |  us-central1-f  |              |              |              |              |              |              |              |               |
+
+### List all images available
+```bash
+gcloud compute images list
+```
+### For a specific family
+```bash
+gcloud compute images list --filter 'family ~ ubuntu'
+```
