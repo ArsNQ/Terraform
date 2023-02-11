@@ -17,7 +17,7 @@ resource "google_compute_instance" "vm_instance" {
   }
 
   metadata = {
-    ssh-keys = "user:${file("~/.ssh/id_rsa.pub")}"
+    ssh-keys = "centos:${file("~/.ssh/id_rsa.pub")}"
   }
 
   network_interface {
