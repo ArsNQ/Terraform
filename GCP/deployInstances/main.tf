@@ -1,12 +1,8 @@
 provider "google" {
-  version = "4.44.1"
+  version = "4.52.0"
   project = var.project-name
   region  = var.region
   zone    = var.zone
-}
-
-resource "google_compute_network" "vpc_network" {
-  name = "terraform-network-001"
 }
 
 resource "google_compute_instance" "vm_instance" {
@@ -21,8 +17,12 @@ resource "google_compute_instance" "vm_instance" {
   }
 
   network_interface {
-    network = google_compute_network.vpc_network.name
+    network = google_compute_network.network.self_link
+    subnetwork = google_compute_subnetwork.subnet_network.self_link
     access_config {
+      // Ephemeral public IP
     }
   }
+
+  tags = [var.firewall-target-tag]
 }

@@ -1,24 +1,43 @@
 variable "region" {
   type = string
-  default = "us-central1"
+  default = ""
 }
 
 variable "zone" {
   type = string
-  default = "us-central1-a"
+  default = ""
 }
 
 variable "project-name" {
   type = string
-  default = "playground-s-11-25ec1b80"
+  default = ""
 }
 
 variable "counts" {
   type = string
-  default = "3"
+  default = ""
 }
 
 variable "machine-type" {
   type = string
-  default = "e2-small"
+  default = ""
 }
+
+variable "network-name" {
+  type = string
+  default = ""
+}
+
+variable "subnetwork-name" {
+  type = string
+  default = ""
+}
+
+variable "firewall-name" {
+  type = string
+}
+
+variable "firewall-target-tag" {
+  type = string
+}
+
