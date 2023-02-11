@@ -11,3 +11,7 @@ terraform plan
 terraform apply
 ```
 
+### show ip address
+```bash
+terraform show | grep "nat_ip"
+```

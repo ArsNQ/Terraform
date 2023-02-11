@@ -12,8 +12,12 @@ resource "google_compute_instance" "vm_instance" {
   zone         = var.zone
   boot_disk {
     initialize_params {
-      image = var.debian-10
+      image = var.rhel-9
     }
+  }
+
+  metadata = {
+    ssh-keys = "user:${file("~/.ssh/id_rsa.pub")}"
   }
 
   network_interface {
@@ -23,6 +27,5 @@ resource "google_compute_instance" "vm_instance" {
       // Ephemeral public IP
     }
   }
-
   tags = [var.firewall-target-tag]
 }
