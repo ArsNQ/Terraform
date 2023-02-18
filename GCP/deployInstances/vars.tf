@@ -13,7 +13,12 @@ variable "project-name" {
   default = ""
 }
 
-variable "counts" {
+variable "count-master" {
+  type = string
+  default = ""
+}
+
+variable "count-worker" {
   type = string
   default = ""
 }

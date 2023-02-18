@@ -1,0 +1,1 @@
+az login -u "" -p "" && az group list
