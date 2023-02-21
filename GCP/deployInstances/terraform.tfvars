@@ -1,6 +1,6 @@
 region= "us-central1"
 zone= "us-central1-a"
-project-name= ""
+project-name= "playground-s-11-015d0d67"
 count-master= 1
 count-worker= 2
 machine-type= "e2-standard-2"

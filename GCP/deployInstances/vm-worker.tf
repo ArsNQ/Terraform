@@ -5,17 +5,22 @@ resource "google_compute_instance" "vm_instance_worker" {
   zone         = var.zone
   boot_disk {
     initialize_params {
-      image = var.debian-10
+      image = var.ubuntu_2004_sku
     }
   }
 
   metadata = {
     ssh-keys = "ubuntu:${file("~/.ssh/id_rsa.pub")}"
+    "google-compute-default-read-write" = "true"
+  }
+
+  service_account {
+    scopes = ["userinfo-email", "compute-ro", "storage-full"]
   }
 
   network_interface {
-    network = google_compute_network.network.self_link
-    subnetwork = google_compute_subnetwork.subnet_network.self_link
+    network = google_compute_network.network.name
+    subnetwork = google_compute_subnetwork.sub_network.name
     access_config {
       // Ephemeral public IP
     }

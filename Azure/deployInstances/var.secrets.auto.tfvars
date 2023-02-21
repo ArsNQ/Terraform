@@ -1,3 +1,4 @@
 ssh_key_pub = ""
-nb_master = 1
+rg_name= ""
+nb_master = 2
 nb_worker = 2
